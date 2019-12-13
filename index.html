@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Etch-A-Sketch :)</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="icon" href="icon.png" type="image/png" />
+    </head>
+
+    <body class="body">
+        <script src="script.js"></script>
+        
+        <div style="display: flex;">
+            <div class="sideBox">
+                <div id="informationContainer">
+                    <h1 align=center>Etch-A-Sketch</h1>
+                    <p class="text">Use the box below to inform the size of the grid that will be created. Then press <i>GENERATE</i>.</p>
+                    <div id="inputContainer">
+                        <div style="width: 38; height: 40;"></div>
+                        <form>
+                            <input type="number" id="numberBox"/>
+                        </form>
+                        <button class="btnGenerate" onclick="generateDiv()"><b>GENERATE</b></button>
+                    </div>
+                    <p class="text">When the white square appears on your right, you can start playing!</p>
+                    <p class="text">By moving your mouse over the grid, it's squares will change color randomly.</p>
+                    <p id="smallText"><i>Beware: trying to create a big grid may cause a crash on the site!</i></p>
+                </div>
+            </div>
+            <div id="container" class="mainBox">
+            </div>
+            <div class="sideBox">
+            </div>
+        </div>
+    </body>
+</html>
